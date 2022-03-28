@@ -3,7 +3,7 @@ import Dish from "../models/DishesSchema";
 const getAllDishes = () => {
     return new Promise((resolve, reject) => {
     Dish.find({})
-    // .populate("Restaurant")
+    .populate("Restaurant")
     .exec(function (err, chef) {
       if (err) {
         reject(err);

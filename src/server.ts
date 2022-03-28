@@ -14,11 +14,8 @@ app.use(express.urlencoded({extended : false}));
 app.use(express.static('public'))
 require('./config/config');
 
-// app.use('/api/restaurants', restaurantRoutes);
-// app.use('/api/chefs', chefsRoutes);
-// app.use('/api/dishes', dishesRoutes);
 app.use('/api', apiRouter)
 
-app.listen(4000, ()=>{
-  console.log(`Server running on Port:4000`)
+app.listen(8000, ()=>{
+  console.log(`Server running on Port:8000`)
 });

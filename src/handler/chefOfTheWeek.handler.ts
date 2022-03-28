@@ -2,12 +2,13 @@ import Chef from "../models/ChefOfTheWeekSchema";
 
 const getAllChefsOfTheWeek = () => {
   return new Promise((resolve, reject) => {
-Chef.find({}).populate("ChefId").populate({
-  path : 'ChefId',
-  populate : {
-    path : 'Restaurants'
-  }
-})
+Chef.find({}).populate("ChefId")
+// .populate({
+//   path : 'ChefId',
+//   populate : {
+//     path : 'Restaurants'
+//   }
+// })
     .exec(function (err, chef) {
       if (err) {
         reject(err);
@@ -42,15 +43,17 @@ const getChef = (id) => {
 
 const updateChef= (id, newChef) => {
   return new Promise((resolve, reject) => {
-      Chef.findByIdAndUpdate(id, {ChefId: newChef})
+      Chef.findByIdAndUpdate(id, {ChefId: newChef.ChefId._id })
       .exec(function (err, chef) {
         if (err) {
           reject(err);
         } else {
+          console.log(chef)
           resolve(chef);
         }
       });
   })
+
 };
 
 const deleteChef = (id) => {

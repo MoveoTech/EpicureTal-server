@@ -3,7 +3,6 @@ import Chef from "../models/ChefsSchema";
 const getAllChefs = () => {
   return new Promise((resolve, reject) => {
 Chef.find({})
-    .populate("Restaurants")
     .exec(function (err, chef) {
       if (err) {
         reject(err);
@@ -19,7 +18,6 @@ Chef.find({})
 const getChef = (id) => {
   return new Promise((resolve, reject) => {
     Chef.findById(id)
-      // .populate("Restaurants")
       .exec(function (err, chef) {
         if (err) {
           reject(err);
@@ -63,7 +61,6 @@ const addChef = function (obj) {
       name: obj.name,
       image: obj.image,
       description: obj.description,
-      Restaurants: obj.restaurants,
     });
     console.log(newChef);
     newChef.save((err) => {
