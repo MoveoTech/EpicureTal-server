@@ -3,7 +3,7 @@
     {
       "name": "Epicure",
 
-      "script": "./server.js",
+      "script": "./dist/server.js",
 
       "env": {
         "NODE_ENV": "development"
@@ -22,7 +22,7 @@
 
       "repo": "git@github.com:MoveoTech/EpicureTal-server.git",
 
-      "path": "/home/ubuntu/Epicure/epicure-server",
+      "path": "/home/ubuntu/Epicure/epicure-server/source/server.js",
 
       "ssh_options": "StrictHostKeyChecking=no",
 
