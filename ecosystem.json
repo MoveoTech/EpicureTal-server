@@ -22,7 +22,7 @@
 
       "repo": "git@github.com:MoveoTech/EpicureTal-server.git",
 
-      "path": "/home/ubuntu/Epicure/epicure-server",
+      "path": "/home/ubuntu/Epicure/",
 
       "ssh_options": "StrictHostKeyChecking=no",
 
