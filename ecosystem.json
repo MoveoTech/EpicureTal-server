@@ -18,7 +18,7 @@
 
       "host": ["ec2-52-58-24-107.eu-central-1.compute.amazonaws.com"],
 
-      "ref": "origin/develop",
+      "ref": "origin/main",
 
       "repo": "git@github.com:MoveoTech/EpicureTal-server.git",
 
