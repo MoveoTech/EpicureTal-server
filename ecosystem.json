@@ -13,8 +13,7 @@
 
   "deploy": {
     "staging": {
-      "key": "/taluliel/pems/epicureTal.pem",
-
+      "key": "/Users/taluliel/pems/epicureTal.pem",
       "user": "ubuntu",
 
       "host": ["ec2-52-58-24-107.eu-central-1.compute.amazonaws.com"],
