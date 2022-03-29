@@ -13,7 +13,7 @@
 
   "deploy": {
     "staging": {
-      "key": "./taluliel/pems/epicureTal.pem",
+      "key": "/taluliel/pems/epicureTal.pem",
 
       "user": "ubuntu",
 
