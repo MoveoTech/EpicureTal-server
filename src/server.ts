@@ -1,7 +1,4 @@
 const express = require('express');
-import restaurantRoutes from './routes/restaurants.router'
-import chefsRoutes from './routes/chefs.router'
-import dishesRoutes from './routes/dishes.router'
 const apiRouter= require ('./routes/api_router/apiRouter');
 
 const cors = require('cors');
