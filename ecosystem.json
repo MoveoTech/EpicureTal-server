@@ -3,7 +3,7 @@
     {
       "name": "Epicure",
 
-      "script": "./src/server.js",
+      "script": "./source/src/server.js",
 
       "env": {
         "NODE_ENV": "development"
